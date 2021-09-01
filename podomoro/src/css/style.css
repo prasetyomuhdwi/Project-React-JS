@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap");
+* {
+  font-family: "Baloo 2", Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background-color: "tomato";
+} */
+.test {
+  border: transparent;
+  border-radius: 18px;
+  outline-color: whitesmoke;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+}
