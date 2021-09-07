@@ -29,7 +29,7 @@ class ToDoList extends Component {
   render() {
     const estCount = 1;
     return (
-      <div className="card">
+      <div className="cardTodolist">
         <div className="option">
           <span className="text">ToDoList</span>
           <span className="faEllipsisV">

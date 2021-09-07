@@ -22,7 +22,7 @@ class Podomoro extends Component {
   render() {
     const time = this.state.time;
     return (
-      <div className="card">
+      <div className="cardPodomoro">
         <div className="option">
           <button className="active">Podomoro</button>
           <button className="btnOption">Short Break</button>

@@ -21,7 +21,7 @@ class Header extends Component {
   render() {
     // const isLoggedIn = this.state.isLoggedIn ? "In" : "Out";
     return (
-      <div className="navBar">
+      <div className="Header">
         <div className="nav">
           <div className="title">Podomoro</div>
           <div className="rightOpt">

@@ -1,4 +1,4 @@
-.card {
+.cardPodomoro {
   width: 90%;
   margin: 1rem;
   display: flex;
@@ -9,18 +9,18 @@
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.option {
+.cardPodomoro > .option {
   display: flex;
   width: 50%;
   justify-content: space-around;
   align-items: center;
 }
-.time {
+.cardPodomoro > .time {
   font-size: 9rem;
   color: white;
   font-weight: 700;
 }
-.btnStart {
+.cardPodomoro > .btnStart {
   border: none;
   width: 48%;
   color: tomato;
@@ -32,7 +32,7 @@
   outline-color: transparent;
   background-color: whitesmoke;
 }
-.btnOption {
+.cardPodomoro > .option > .btnOption {
   border: none;
   font-size: 20px;
   border-radius: 3px;
@@ -41,7 +41,7 @@
   outline-color: transparent;
   background-color: transparent;
 }
-.active {
+.cardPodomoro > .option > .active {
   border: none;
   font-size: 20px;
   color: whitesmoke;
