@@ -1,0 +1,52 @@
+.card {
+  width: 90%;
+  margin: 1rem;
+  display: flex;
+  padding: 2rem 0;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.option {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+.time {
+  font-size: 9rem;
+  color: white;
+  font-weight: 700;
+}
+.btnStart {
+  border: none;
+  width: 48%;
+  color: tomato;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  padding: 1rem;
+  text-transform: uppercase;
+  outline-color: transparent;
+  background-color: whitesmoke;
+}
+.btnOption {
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  color: whitesmoke;
+  padding: 0.4rem 0.5rem;
+  outline-color: transparent;
+  background-color: transparent;
+}
+.active {
+  border: none;
+  font-size: 20px;
+  color: whitesmoke;
+  border-radius: 3px;
+  padding: 0.4rem 0.5rem;
+  outline-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
+}
