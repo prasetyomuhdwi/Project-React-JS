@@ -1,0 +1,95 @@
+.card {
+  width: 31vw;
+  margin: 1rem;
+  display: flex;
+  padding: 2rem 0;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.option {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.text {
+  color: whitesmoke;
+}
+.list {
+  width: 90%;
+}
+.item {
+  width: 100%;
+  display: flex;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemInput {
+  width: 100%;
+  display: flex;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+  flex-direction: column;
+  background-color: whitesmoke;
+  justify-content: space-between;
+}
+.itemAdd {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+}
+.border {
+  width: 90%;
+  margin: 0.5rem;
+  border-bottom: 3.2px solid rgba(255, 255, 255, 0.5);
+}
+.faEllipsisV {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.faEllipsisVBlack {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 0.2rem 0.8rem;
+  border-radius: 8px;
+}
+.inputTodo {
+  width: 100%;
+  padding: 1rem;
+  border: transparent;
+  border-radius: 0.3rem;
+}
+.inputEst {
+  width: 60%;
+  padding: 0.5rem;
+  border: transparent;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.adjustEst {
+  width: 40%;
+  display: grid;
+  margin-left: 0.35rem;
+  grid-template-columns: auto auto;
+}
+.btnAdjustEst {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 1);
+}
