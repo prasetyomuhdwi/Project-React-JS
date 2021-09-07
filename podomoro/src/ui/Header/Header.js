@@ -1,24 +1,24 @@
-import react, { Component } from "react";
+import { Component } from "react";
 
-class NavBar extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isLoggedIn: false,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+class Header extends Component {
+  // constructor() {
+  //   super();
+  // this.state = {
+  //   isLoggedIn: false,
+  // };
+  // this.handleClick = this.handleClick.bind(this);
+  // }
 
-  handleClick() {
-    this.setState((prevState) => {
-      return {
-        isLoggedIn: !prevState.isLoggedIn,
-      };
-    });
-  }
+  // handleClick() {
+  //   this.setState((prevState) => {
+  //     return {
+  //       isLoggedIn: !prevState.isLoggedIn,
+  //     };
+  //   });
+  // }
 
   render() {
-    const isLoggedIn = this.state.isLoggedIn ? "In" : "Out";
+    // const isLoggedIn = this.state.isLoggedIn ? "In" : "Out";
     const style = {
       navBar: {
         width: "100%",
@@ -71,4 +71,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default Header;

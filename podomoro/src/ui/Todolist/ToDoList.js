@@ -1,4 +1,4 @@
-import react, { Component } from "react";
+import { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheckCircle,
@@ -26,7 +26,6 @@ class ToDoList extends Component {
   }
 
   render() {
-    const time = this.state.time;
     const estCount = 1;
     const style = {
       card: {
