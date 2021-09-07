@@ -3,7 +3,7 @@ import reactDom from "react-dom";
 import Header from "./ui/Header/Header";
 import Podomoro from "./ui/Podomoro/Podomoro";
 import ToDoList from "./ui/Todolist/ToDoList";
-import styles from "./index.css";
+import "./index.css";
 
 // init //
 const init = {

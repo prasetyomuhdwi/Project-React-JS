@@ -1,0 +1,39 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.btn {
+  width: 4rem;
+  padding: 0.4rem 0.5rem;
+  outline-color: transparent;
+  border: none;
+  border-radius: 3px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.rightOpt {
+  display: flex;
+  width: 17%;
+  justify-content: space-between;
+}
+.border {
+  margin-top: 1rem;
+  width: 100%;
+  border-bottom: 3.2px solid rgba(0, 0, 0, 0.2);
+}
