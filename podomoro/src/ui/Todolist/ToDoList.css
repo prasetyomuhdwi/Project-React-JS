@@ -1,5 +1,5 @@
 .cardTodolist {
-  width: 31vw;
+  width: 100%;
   margin: 1rem;
   display: flex;
   padding: 2rem 0;
@@ -20,14 +20,16 @@
 }
 .cardTodolist > .option > .text {
   color: whitesmoke;
+  font-size: 20px;
 }
-.cardTodolist > .option > .faEllipsisV {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 0.4rem 0.8rem;
+.cardTodolist > .option > .btnfaEllipsisV {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
   border-radius: 8px;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .cardTodolist > .list {
   width: 90%;
@@ -55,6 +57,8 @@
 .cardTodolist > .list > .itemAdd {
   width: 100%;
   display: flex;
+  cursor: pointer;
+  font-size: 16px;
   padding: 0.5rem;
   border-radius: 0.2rem;
   justify-content: center;
@@ -62,10 +66,16 @@
   background-color: rgba(0, 0, 0, 0.2);
   border: 2px dashed rgba(255, 255, 255, 0.5);
 }
-.cardTodolist > .list > .item > .faEllipsisVBlack {
-  background-color: rgba(0, 0, 0, 0.03);
-  padding: 0.2rem 0.8rem;
+.cardTodolist > .list > .itemAdd:hover {
+  background-color: whitesmoke;
+  border-radius: 0.2rem;
+  color: black;
+}
+.cardTodolist > .list > .item > .btnfaEllipsisVBlack {
+  cursor: pointer;
   border-radius: 8px;
+  padding: 0.2rem 0.8rem;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 .cardTodolist > .list > .itemInput > .inputTodo {
   width: 100%;
@@ -80,6 +90,23 @@
   border-radius: 0.3rem;
   background-color: rgba(0, 0, 0, 0.08);
 }
+
+/* Remove Arrows/Spinners */
+/* Chrome, Safari, Edge, Opera */
+.cardTodolist > .list > .itemInput > div > .inputEst::-webkit-outer-spin-button,
+.cardTodolist
+  > .list
+  > .itemInput
+  > div
+  > .inputEst::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.cardTodolist > .list > .itemInput > div > .inputEst[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .cardTodolist > .list > .itemInput > div > .adjustEst {
   width: 40%;
   display: grid;
@@ -88,8 +115,13 @@
 }
 .cardTodolist > .list > .itemInput > div > .adjustEst > .btnAdjustEst {
   width: 90%;
+  cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 1);
+}
+.cardTodolist > .list > .itemInput > div > .adjustEst > .btnAdjustEst:hover {
+  background-color: #ff735a;
+  color: white;
 }

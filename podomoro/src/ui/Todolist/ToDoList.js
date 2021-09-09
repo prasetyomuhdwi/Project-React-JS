@@ -13,26 +13,37 @@ class ToDoList extends Component {
     super();
     this.state = {
       isLoggedIn: false,
-      time: 25,
+      estTime: 1,
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.increaseEstPodomoro = this.increaseEstPodomoro.bind(this);
+    this.decreaseEstPodomoro = this.decreaseEstPodomoro.bind(this);
   }
 
-  handleClick() {
-    this.setState((prevState) => {
-      return {
-        isLoggedIn: !prevState.isLoggedIn,
-      };
-    });
+  increaseEstPodomoro() {
+    if (this.state.estTime < 5) {
+      this.setState((prevState) => {
+        return {
+          estTime: prevState.estTime + 1,
+        };
+      });
+    }
+  }
+  decreaseEstPodomoro() {
+    if (this.state.estTime > 1) {
+      this.setState((prevState) => {
+        return {
+          estTime: prevState.estTime - 1,
+        };
+      });
+    }
   }
 
   render() {
-    const estCount = 1;
     return (
       <div className="cardTodolist">
         <div className="option">
           <span className="text">ToDoList</span>
-          <span className="faEllipsisV">
+          <span className="btnfaEllipsisV">
             <FontAwesomeIcon
               icon={faEllipsisV}
               color="rgb(255,255,255)"
@@ -51,7 +62,7 @@ class ToDoList extends Component {
               />
               <span>itemName</span>
             </span>
-            <span className="faEllipsisVBlack">
+            <span className="btnfaEllipsisVBlack">
               <FontAwesomeIcon
                 icon={faEllipsisV}
                 color="rgb(0,0,0)"
@@ -67,20 +78,29 @@ class ToDoList extends Component {
             />
             <span style={{ marginTop: "1rem" }}>Est Podomoro</span>
             <div style={{ display: "flex" }}>
-              <input type="number" className="inputEst" value={estCount} />
+              <input
+                type="number"
+                className="inputEst"
+                value={this.state.estTime}
+                disabled={true}
+              />
               <div className="adjustEst">
-                <button className="btnAdjustEst">
-                  <FontAwesomeIcon icon={faPlus} color="rgb(0,0,0)" />
+                <button
+                  className="btnAdjustEst"
+                  onClick={this.increaseEstPodomoro}
+                >
+                  <FontAwesomeIcon icon={faPlus} />
                 </button>
-                <button className="btnAdjustEst">
-                  <FontAwesomeIcon icon={faMinus} color="rgb(0,0,0)" />
+                <button
+                  className="btnAdjustEst"
+                  onClick={this.decreaseEstPodomoro}
+                >
+                  <FontAwesomeIcon icon={faMinus} />
                 </button>
               </div>
             </div>
           </div>
-          <div className="itemAdd">
-            <span>+ Add Task</span>
-          </div>
+          <button className="itemAdd">+ Add Task</button>
         </div>
       </div>
     );

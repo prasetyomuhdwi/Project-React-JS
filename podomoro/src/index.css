@@ -5,23 +5,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .app {
   display: flex;
   justify-content: center;
   align-items: top;
   width: 100%;
-  height: 100vh;
   background-color: tomato;
 }
-
-.content {
+.app > .content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
+}
+.app > .content > .main {
+  display: flex;
+  width: 90%;
 }
 
-.main {
-  display: flex;
+@media (min-width: 640px) and (max-width: 1024px) {
+  .app > .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+  }
+  .app > .content > .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }

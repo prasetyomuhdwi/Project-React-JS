@@ -37,3 +37,11 @@
   width: 100%;
   border-bottom: 3.2px solid rgba(0, 0, 0, 0.2);
 }
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .Header > .nav > .rightOpt {
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+  }
+}

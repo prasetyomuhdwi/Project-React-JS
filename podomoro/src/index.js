@@ -1,4 +1,5 @@
 // Library //
+import react from "react";
 import reactDom from "react-dom";
 import Header from "./ui/Header/Header";
 import Podomoro from "./ui/Podomoro/Podomoro";
@@ -20,8 +21,11 @@ const App = () => {
       <div className="content">
         <Header contact={init} />
         <div className="main">
-          <Podomoro contact={init} style={{ width: "60%" }} />
-          <ToDoList contact={init} style={{ width: "30%" }} />
+          <Podomoro contact={init} />
+          <ToDoList contact={init} />
+        </div>
+        <div style={{ width: "100%", height: "5rem", marginTop: "3.3rem" }}>
+          <p style={{ textAlign: "center", color: "white" }}>footer</p>
         </div>
       </div>
     </div>
@@ -29,4 +33,9 @@ const App = () => {
 };
 
 // Render //
-reactDom.render(<App />, document.getElementById("root"));
+reactDom.render(
+  <react.StrictMode>
+    <App />
+  </react.StrictMode>,
+  document.getElementById("root")
+);

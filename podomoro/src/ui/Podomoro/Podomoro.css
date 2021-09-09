@@ -1,5 +1,5 @@
 .cardPodomoro {
-  width: 90%;
+  width: 100%;
   margin: 1rem;
   display: flex;
   padding: 2rem 0;
@@ -11,7 +11,7 @@
 }
 .cardPodomoro > .option {
   display: flex;
-  width: 50%;
+  width: 80%;
   justify-content: space-around;
   align-items: center;
 }
