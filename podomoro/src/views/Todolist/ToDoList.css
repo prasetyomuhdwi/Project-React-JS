@@ -29,7 +29,13 @@
   align-items: center;
   padding: 0.4rem 0.8rem;
   justify-content: center;
+  color: white;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+.cardTodolist > .option > .btnfaEllipsisV:hover {
+  transform: translate(0px, -2px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .cardTodolist > .list {
   width: 90%;
@@ -62,20 +68,37 @@
   padding: 0.5rem;
   border-radius: 0.2rem;
   justify-content: center;
+  align-items: center;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
   border: 2px dashed rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
 }
 .cardTodolist > .list > .itemAdd:hover {
-  background-color: whitesmoke;
+  transform: translate(0px, -2px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.37);
   border-radius: 0.2rem;
-  color: black;
+  font-weight: bold;
+}
+.cardTodolist > .list > .itemAdd > p {
+  margin-left: 0.5rem;
 }
 .cardTodolist > .list > .item > .btnfaEllipsisVBlack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(37, 14, 11);
   cursor: pointer;
   border-radius: 8px;
-  padding: 0.2rem 0.8rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(34, 34, 34, 0.03);
+  transition: var(--transition);
+}
+.cardTodolist > .list > .item > .btnfaEllipsisVBlack:hover {
+  transform: translate(-1px, -2px);
+  background-color: rgba(255, 99, 71, 0.568);
+  color: white;
 }
 .cardTodolist > .list > .itemInput > .inputTodo {
   width: 100%;
@@ -114,14 +137,21 @@
   grid-template-columns: auto auto;
 }
 .cardTodolist > .list > .itemInput > div > .adjustEst > .btnAdjustEst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   cursor: pointer;
   padding: 0.5rem;
+  color: rgb(37, 14, 11);
   border-radius: 0.3rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
 }
 .cardTodolist > .list > .itemInput > div > .adjustEst > .btnAdjustEst:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
   background-color: #ff735a;
   color: white;
 }

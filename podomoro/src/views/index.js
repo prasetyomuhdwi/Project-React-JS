@@ -9,6 +9,7 @@ import ToDoList from "./Todolist/ToDoList";
 // import { putTodo } from "../application/actions/todos";
 import "./index.css";
 
+/* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 export default () => {
   // const todos = useSelector(getTodos);
   const dispatch = useDispatch();
@@ -28,8 +29,8 @@ export default () => {
             <ToDoList />
           </div>
         )}
-        <div style={{ width: "100%", height: "5rem", marginTop: "3.3rem" }}>
-          <p style={{ textAlign: "center", color: "white" }}>footer</p>
+        <div className="footer center">
+          <p>footer</p>
         </div>
       </div>
     </div>

@@ -7,14 +7,28 @@ class Podomoro extends Component {
     this.state = {
       isLoggedIn: false,
       time: 25,
+      isSelect: "Podomoro",
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleTimeClick = this.handleTimeClick.bind(this);
   }
 
-  handleClick() {
+  handleTimeClick(event) {
+    let tmp;
+    switch (event.target.dataset.id) {
+      case "Podomoro":
+        tmp = 25;
+        break;
+      case "Short":
+        tmp = 5;
+        break;
+      case "Long":
+        tmp = 30;
+        break;
+    }
     this.setState((prevState) => {
       return {
-        isLoggedIn: !prevState.isLoggedIn,
+        isSelect: event.target.dataset.id,
+        time: tmp,
       };
     });
   }
@@ -24,9 +38,35 @@ class Podomoro extends Component {
     return (
       <div className="cardPodomoro">
         <div className="option">
-          <button className="active">Podomoro</button>
-          <button className="btnOption">Short Break</button>
-          <button className="btnOption">Long Break</button>
+          <button
+            className={
+              this.state.isSelect === "Podomoro"
+                ? "btnOption active"
+                : "btnOption"
+            }
+            data-id="Podomoro"
+            onClick={this.handleTimeClick}
+          >
+            Podomoro
+          </button>
+          <button
+            className={
+              this.state.isSelect === "Short" ? "btnOption active" : "btnOption"
+            }
+            data-id="Short"
+            onClick={this.handleTimeClick}
+          >
+            Short Break
+          </button>
+          <button
+            className={
+              this.state.isSelect === "Long" ? "btnOption active" : "btnOption"
+            }
+            data-id="Long"
+            onClick={this.handleTimeClick}
+          >
+            Long Break
+          </button>
         </div>
         <div className="time">{time}:00</div>
         <button className="btnStart">Start</button>

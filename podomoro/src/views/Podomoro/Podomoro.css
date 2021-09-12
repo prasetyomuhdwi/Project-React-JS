@@ -31,6 +31,11 @@
   text-transform: uppercase;
   outline-color: transparent;
   background-color: whitesmoke;
+  transition: var(--transition);
+}
+.cardPodomoro > .btnStart:hover {
+  transform: translate(-1px, -7px);
+  box-shadow: var(--box-shadow);
 }
 .cardPodomoro > .option > .btnOption {
   border: none;
@@ -40,6 +45,11 @@
   padding: 0.4rem 0.5rem;
   outline-color: transparent;
   background-color: transparent;
+  transition: var(--transition);
+}
+.cardPodomoro > .option > .btnOption:hover {
+  transform: translate(-1px, -3px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .cardPodomoro > .option > .active {
   border: none;

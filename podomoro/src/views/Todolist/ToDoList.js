@@ -44,11 +44,7 @@ class ToDoList extends Component {
         <div className="option">
           <span className="text">ToDoList</span>
           <span className="btnfaEllipsisV">
-            <FontAwesomeIcon
-              icon={faEllipsisV}
-              color="rgb(255,255,255)"
-              style={{ fontSize: "1rem" }}
-            />
+            <FontAwesomeIcon icon={faEllipsisV} style={{ fontSize: "1rem" }} />
           </span>
         </div>
         <div className="border"></div>
@@ -65,7 +61,6 @@ class ToDoList extends Component {
             <span className="btnfaEllipsisVBlack">
               <FontAwesomeIcon
                 icon={faEllipsisV}
-                color="rgb(0,0,0)"
                 style={{ fontSize: "1rem" }}
               />
             </span>
@@ -100,7 +95,10 @@ class ToDoList extends Component {
               </div>
             </div>
           </div>
-          <button className="itemAdd">+ Add Task</button>
+          <button className="itemAdd">
+            <FontAwesomeIcon icon={faPlus} />
+            <p>Add Task</p>
+          </button>
         </div>
       </div>
     );

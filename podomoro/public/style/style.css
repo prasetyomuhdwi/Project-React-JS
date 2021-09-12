@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap");
+:root {
+  --font-family: "Baloo 2", Helvetica, sans-serif;
+  --font-size: 18px;
+  --font-weight: 300;
+  --line-height: 1.618;
+  --transition: all ease-in-out 0.3s;
+  --box-shadow: 11px 11px 37px 2px rgba(0, 0, 0, 0.445);
+}
+
+* {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sub-heading {
+  --font-size: 1.618rem;
+  --font-weight: 600;
+}
+
+.heading {
+  --font-size: 2.618rem;
+  --font-weight: 400;
+}
+
+.large-heading {
+  --font-size: 4.236rem;
+  --font-weight: 500;
+}
+
+.footnote {
+  --font-size: 0.618rem;
+  --font-weight: 500;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  background-color: tomato;
+}

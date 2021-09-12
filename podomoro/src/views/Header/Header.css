@@ -19,18 +19,23 @@
 }
 .Header > .nav > .rightOpt {
   display: flex;
-  width: 17%;
+  width: 12vw;
   justify-content: space-between;
 }
 .Header > .nav > .rightOpt > .btn {
-  width: 4rem;
   padding: 0.4rem 0.5rem;
   outline-color: transparent;
   border: none;
   border-radius: 3px;
   color: whitesmoke;
+  cursor: pointer;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+.Header > .nav > .rightOpt > .btn:hover {
+  transform: translate(-1px, -7px);
+  background-color: rgba(148, 73, 73, 0.582);
 }
 .Header > .border {
   margin-top: 1rem;
@@ -41,7 +46,7 @@
 @media (min-width: 640px) and (max-width: 1024px) {
   .Header > .nav > .rightOpt {
     display: flex;
-    width: 22%;
+    width: 23vw;
     justify-content: space-between;
   }
 }
