@@ -1,41 +1,13 @@
-// Library //
-import react from "react";
-import reactDom from "react-dom";
-import Header from "./ui/Header/Header";
-import Podomoro from "./ui/Podomoro/Podomoro";
-import ToDoList from "./ui/Todolist/ToDoList";
-import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { configureStore } from "./application/store";
+import services from "./infrastructure/services";
+import App from "./views";
 
-// init //
-const init = {
-  imgUrl: "logo512.png",
-  name: "Title",
-  phoneNum: "09273746573",
-  email: "asdhg@adsadsa.com",
-};
-
-// Components //
-const App = () => {
-  return (
-    <div className="app">
-      <div className="content">
-        <Header contact={init} />
-        <div className="main">
-          <Podomoro contact={init} />
-          <ToDoList contact={init} />
-        </div>
-        <div style={{ width: "100%", height: "5rem", marginTop: "3.3rem" }}>
-          <p style={{ textAlign: "center", color: "white" }}>footer</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// Render //
-reactDom.render(
-  <react.StrictMode>
+ReactDOM.render(
+  <Provider store={configureStore(services)}>
     <App />
-  </react.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
