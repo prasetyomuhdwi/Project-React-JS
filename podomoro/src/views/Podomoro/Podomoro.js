@@ -24,6 +24,8 @@ class Podomoro extends Component {
       case "Long":
         tmp = 30;
         break;
+      default:
+        break;
     }
     this.setState((prevState) => {
       return {
@@ -32,7 +34,6 @@ class Podomoro extends Component {
       };
     });
   }
-
   render() {
     const time = this.state.time;
     return (
